@@ -1,111 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- css format-
-    selector{
-    property:value
-    }
-    -->
     <style>
-        .navbar{
-            display:flex;
-            justify-content:space-between;
+        .navbar {
+            display: flex;
+            justify-content: space-between;
             align-items: center;
             padding: 10px 30px;
+            background-color: white;
+            position: sticky;
+            top: 0px;
         }
-        .wallpaper2-parent{
-            width:5%;
+
+        .wallpaper2-parent {
+            width: 10%;
         }
-        .navbar-links{
-            display:flex;
+
+        .navbar-links {
             width: 70%;
-            justify-content:space-evenly; 
+            display: flex;
+            justify-content: space-evenly;
         }
-        .navbar-links a{
-            color:blue;
+
+        .navbar-links a {
+            color: cadetblue;
+            font-weight: bold;
+            font-family: sans-serif;
             text-decoration: none;
             font-size: 1.3rem;
         }
-        .lets-talk{
+
+        .lets-talk {
             background-color: black;
-            color:white;
-            padding:10px;
+            color: white;
+            padding: 10px;
             width: 8%;
             text-decoration: none;
             text-align: center;
             border-radius: 25px;
         }
-        .lets-talk:hover{
+
+        .lets-talk:hover {
             background-color: white;
-            color:black;
-            border:1px solid black;
+            color: black;
+            border: 1px solid black;
         }
-        .web-developer-container{
-        font-family: sans-serif;
-        background-color: #00ffff22;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding:2% 5%;
-       }
-       .web-developer{
-        width: 40%;
-       }
-       .web-developer h1{
-        font-size: 2.3rem;
-       }
-       .web-developer p{
-        text-align: justify;
-       }
-       .my-profile{
-        width: 30%;
-       }
-       .web-developer-links a{
-        background-color:cadetblue;
-        color: white;
-        padding: 10px 15px;
-        text-decoration: none;
-        border-radius: 25px; 
-        margin:0px 10px ;
-       }
-       .web-developer-links a:hover{
-        background-color: black;
-        color: white;
-       }
-        
+
+        .data-developer-container {
+            font-family: sans-serif;
+            background-color: #00ffff22;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2% 5%;
+        }
+
+        .data-developer {
+            width: 40%;
+        }
+
+        .data-developer h1 {
+            font-size: 2.3rem;
+        }
+
+        .data-developer p {
+            text-align: justify;
+        }
+
+        .my-profile {
+            width: 40%;
+        }
+
+        .data-developer-links a {
+            background-color: cadetblue;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 25px;
+            margin: 0px 10px;
+        }
+
+        .data-developer-links a:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .about-me-container {
+            background-color: white;
+        }
+
+        .about-me {
+            width: 45%;
+        }
+
+        .about-me h2 {
+            color: cadetblue;
+        }
+
+        .about-me p {
+            font-size: 0.9rem;
+            line-height: 1.8;
+        }
+        .about-left{
+            position: relative;
+        }
+        .project-count{
+            position: absolute;
+            bottom: 0%;
+            right: 15%;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: white;
+        }
+        .project-count p{
+            color: plum;
+        }
+        .about-my-profile{
+            width: 75%;
+        }
     </style>
 </head>
+
 <body>
     <nav class="navbar">
-    <a href="" class="wallpaper2-parent">
-        <img src="./wallpaper2.jpg" width="95%" alt="">
-    </a>
-    <div class="navbar-links">
-        <a href="">Home</a>
-        <a href="">About Us</a>
-        <a href="">Services</a>
-        <a href="">Skill</a>
-        <a href="">Work</a>
-        <a href="">Pricing</a>
-        <a href="">Testimonial</a>
-    </div>
-    
-    <a href="" class="lets-talk">LET'S TALK</a>
+        <a href="" class="wallpaper2-parent">
+            <img src="./wallpaper2.jpg" width="50px" height="50px" alt="">
+        </a>
+        <div class="navbar-links">
+            <a href="">Home</a>
+            <a href="">About Us</a>
+            <a href="">Services</a>
+            <a href="">Skill</a>
+            <a href="">Work</a>
+            <a href="">Pricing</a>
+            <a href="">Testimonial</a>
+        </div>
+        <a href="" class="lets-talk">Lets Talk</a>
     </nav>
-     <div class="web-developer-container">
-        <div class="web-developer">
-            <h1>Hey! I am TRIVENI BODAPATI</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, totam magnam est eligendi vitae illo ex, commodi ad</p>
-            <div class="web-developer-links">
+
+    <div class="data-developer-container">
+        <div class="data-developer">
+            <h1>Hey! I am a Data Scientist</h1>
+            <p>I turn raw data into actionable insights through analytics, visualization, and machine learning.
+                 Passionate about solving complex problems and helping businesses make data-driven decisions.</p>
+            <div class="data-developer-links">
                 <a href="">LEARN MORE</a>
                 <a href="">HIRE ME</a>
             </div>
         </div>
-        <img class="my-profile" src="./wallpaper2.jpg"  alt="">
+        <img class="my-profile"
+            src="./triveni.jpg"  alt="">
     </div>
-    
+
+    <div class="data-developer-container about-me-container">
+        <div class="about-left">
+            <img class="about-my-profile"
+                src="./triveni.jpg"  alt="">
+            <div class="project-count">
+                <h2>Data Scientist</h2>
+                <p>100+ Project Complete</p>
+            </div>
+        </div>
+
+        <div class="about-me">
+            <h3>About me</h3>
+            <h2>I am a Passionate Data Scientist</h2>
+            <p>I’m a Data Scientist with over 7 years of experience turning raw data into meaningful insights.
+                 I specialize in analyzing complex datasets, building predictive models, and delivering data-driven solutions that empower business decisions.
+                 I’m passionate about using data to tell stories and solve real-world problems.</p>
+            <h2>smart work</h2>
+            <p>I’ve been part of teams that designed and deployed machine learning models for enterprise-level analytics platforms.
+                 My focus is always on optimizing performance, improving accuracy, and ensuring models translate into measurable business impact.</p>
+            <h2>modern work</h2>
+            <p>I work with modern technologies including Python, SQL, Power BI, and Tableau, alongside frameworks like TensorFlow and scikit-learn.
+                 One of my favorite aspects of this field is collaborating with teams that share a curiosity for exploring data and pushing the boundaries of AI-driven innovation.</p>
+        </div>
+    </div>
+
 </body>
+
 </html>
